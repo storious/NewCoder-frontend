@@ -22,7 +22,6 @@ const handleLogin = async () => {
             replace: true,
         });
         store.dispatch("user/getLoginUser");
-
     }
     else {
         message.error("登录失败," + res.message);

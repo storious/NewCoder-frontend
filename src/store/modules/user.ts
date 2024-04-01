@@ -25,7 +25,7 @@ export default {
         async userLogout({ commit, state }) {
             await UserControllerService.userLogout();
             commit("updateUser", { ...state.loginUser, userName: "未登录", userRole: ACCESS_ENUM.NOT_LOGIN })
-        }
+        },
     },
     mutations: {
         updateUser(state, payload) {

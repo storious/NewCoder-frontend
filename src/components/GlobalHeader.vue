@@ -69,14 +69,12 @@ const handleSelect = async (option: any) => {
 
     if (option.value === "login") {
         if (store.state.user.loginUser.userRole === ACCESS_ENUM.NOT_LOGIN) {
-            router.push(
-                {
-                    path: "/user/login"
-                }
-            )
+            router.push({
+                path: "/user/login"
+            })
         }
         else {
-            Message.error("您已登录！") 
+            Message.error("您已登录！")
         }
     } else if (option.value === "logout") {
         if (store.state.user.loginUser.userRole !== ACCESS_ENUM.NOT_LOGIN) {

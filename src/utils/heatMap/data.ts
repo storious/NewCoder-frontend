@@ -12,8 +12,8 @@ const option = {
         itemWidth: 15,
         pieces: [
             { gte: 1, lt: 3, label: " ", color: '#00e600' },
-            { gte: 3, lt: 6, label: " ", color: '#00bf00' },
-            { gte: 6, label: " ", color: '#009a00' }
+            { gte: 3, lt: 6, label: " ", color: '#00b400' },
+            { gte: 6, label: " ", color: '#008100' }
         ],
 
         orient: 'horizontal',
