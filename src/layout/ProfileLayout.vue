@@ -21,9 +21,9 @@ import foot  from '../utils/foot.ts';
 
 <style scoped>
 #profileLayout .content {
-    background: liner-gradient(to, right, #aaa, #ddd);
-    margin-bottom: 16px;
-    margin-top: 32px;
+    background: #f6f6f6;
+    margin-bottom: 2px;
+    margin-top: 2px;
     padding: 20px;
 }
 

@@ -89,7 +89,7 @@ const toHome = () => {
         <a-grid :cols="4" :colGap="12" :rowGap="16">
 
             <a-grid-item :span="2" class="demo-item">
-                <a-typography-title :heading="6" >解题数量</a-typography-title>
+                <!-- <a-typography-title :heading="6" >解题</a-typography-title> -->
                 <div class="progress-layout">
                     <div class="circle-progress">
                         <a-progress type="circle" size="large" :percent="circlePercent" :color="{
@@ -115,7 +115,7 @@ const toHome = () => {
                     <icon-trophy size="32" />
                     <h2>个人荣誉</h2>
                 </a-space>
-                <div style="display: flex; margin-left: 10px;">
+                <div style="display: flex; margin-left: 10px; justify-content: center;">
                     <a-space>
                         <icon-code size="20" />
                         rating: <a-typography-text type="warning">
@@ -123,7 +123,7 @@ const toHome = () => {
                         </a-typography-text>
                     </a-space>
                 </div>
-                <div style="display: flex; margin-left: 10px;">
+                <div style="display: flex; margin-left: 10px; justify-content: center;">
                     <a-space>
                         <icon-bar-chart size="20" />
                         历史最佳: <a-typography-text type="danger">
@@ -145,24 +145,15 @@ const toHome = () => {
 </template>
 
 <style scoped>
-.icon-hover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    transition: all 0.1s;
-}
-
-.icon-hover:hover {
-    background-color: rgb(var(--gray-2));
+#profile-view{
+    background: #f6f6f6;
 }
 
 .progress-layout {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    margin-top: 20px;
 }
 
 .circle-progress {
@@ -176,31 +167,30 @@ const toHome = () => {
 }
 
 .personal-info {
+    background-color: #f6f6f6;
     width: 360px;
     margin-left: 60px;
     margin-right: 40px;
     justify-content: center;
+    border-radius: 1em;
+    border: 0.5px solid #ccc;
 }
 
 #profile-view .demo-item {
     height: 200px;
     overflow: hidden;
-    /* justify-content: center; */
     line-height: 50px;
     border-radius: 15px;
     border: 1px solid #ccc;
-    /* color: var(--color-white); */
     text-align: center;
 }
 
 #profile-view .heatmap {
     height: 325px;
     overflow: hidden;
-    /* justify-content: center; */
     line-height: 50px;
     border-radius: 15px;
     border: 1px solid #ccc;
-    /* color: var(--color-white); */
     text-align: center;
 }
 </style>
